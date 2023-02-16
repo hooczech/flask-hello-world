@@ -51,7 +51,8 @@ def q():
             return jsonify(reply='Bohužel nyní nedokážu na tuto otázku odpovědět')
         firstQ = False
         return jsonify(reply=response)
-    except:
+    except Exception as e:
         print("An exception occurred")
+        print(e)
         return jsonify(reply="Bohužel nyní nedokážu odpovědět, můj server je přetížený, zkuste to za chvíli")
 
