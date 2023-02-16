@@ -16,6 +16,10 @@ body {
   width: 5px;
 }
 
+.bg-primary {
+    background-color: grey!important;
+}
+
 ::-webkit-scrollbar-track {
   width: 5px;
   background: #f5f5f5;
